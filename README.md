@@ -2,16 +2,19 @@
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
-![Workflow result](https://github.com/<OWNER>/<REPOSITORY>/workflows/Check/badge.svg)
+![Workflow result](https://github.com/amo82/amo-puppy-compose-kotlin/workflows/Check/badge.svg)
 
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
+Participating in the JetPack Compose challenge has been very rewarding for me.
 
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
+I am a teacher and teaching my high school students with this new tool will be very useful and above all fast and professional
 <!--- What are you especially proud of? -->
+I love to achieve rapid application development because that way I can focus on the most important part of the business.
 
 
 ## :camera_flash: Screenshots
