@@ -13,16 +13,42 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.example.androiddevchallenge.ui.views
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.gestures.Orientation.Vertical
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.*
-import androidx.compose.material.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.Button
+import androidx.compose.material.ContentAlpha
+import androidx.compose.material.Divider
+import androidx.compose.material.ExperimentalMaterialApi
+import androidx.compose.material.FractionalThreshold
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
+import androidx.compose.material.LocalContentAlpha
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
+import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.ArrowBack
+import androidx.compose.material.primarySurface
+import androidx.compose.material.rememberSwipeableState
+import androidx.compose.material.swipeable
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.remember
@@ -31,12 +57,17 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.androiddevchallenge.R
+import com.example.androiddevchallenge.model.Puppy
+import com.example.androiddevchallenge.repo.PuppyRepo
+import com.example.androiddevchallenge.repo.puppyList
 import com.example.androiddevchallenge.ui.common.OutlinedAvatar
+import com.example.androiddevchallenge.ui.common.PuppyListItem
+import com.example.androiddevchallenge.ui.theme.BlueTheme
 import com.example.androiddevchallenge.ui.theme.PinkTheme
 import com.example.androiddevchallenge.utils.NetworkImage
 import com.example.androiddevchallenge.utils.backHandler
@@ -44,12 +75,6 @@ import com.example.androiddevchallenge.utils.scrim
 import dev.chrisbanes.accompanist.insets.navigationBarsPadding
 import dev.chrisbanes.accompanist.insets.statusBarsPadding
 import kotlinx.coroutines.launch
-import com.example.androiddevchallenge.R
-import com.example.androiddevchallenge.model.*
-import com.example.androiddevchallenge.repo.PuppyRepo
-import com.example.androiddevchallenge.repo.puppyList
-import com.example.androiddevchallenge.ui.common.PuppyListItem
-import com.example.androiddevchallenge.ui.theme.BlueTheme
 
 val FabSize = 56.dp
 private const val ExpandedSheetAlpha = 0.96f
@@ -108,8 +133,6 @@ fun PuppyDetails(
                     -sheetState.offset.value / dragRange
                 }.coerceIn(0f, 1f)
                 PuppyDescription(puppy, selectPuppy, upPress)
-
-
             }
         }
     }
@@ -158,10 +181,9 @@ private fun PuppyDescriptionHeader(
             }
             Spacer(modifier = Modifier.weight(1f))
 
-            Button(  onClick = { /*TODO*/ }) {
+            Button(onClick = { /*TODO*/ }) {
                 Text(text = "Adopt Me")
                 Modifier.padding(16.dp)
-
             }
         }
         OutlinedAvatar(
@@ -232,13 +254,7 @@ private fun PuppyDescriptionBody(puppy: Puppy) {
                     bottom = 32.dp
                 )
         )
-
-
-
-
     }
-
-
 }
 
 @Composable
@@ -288,10 +304,6 @@ private fun RelatedPuppy(
     }
 }
 
-
-
-
-
 private enum class SheetState { Open, Closed }
 
 private val LazyListState.isScrolled: Boolean
@@ -307,8 +319,6 @@ private fun CourseDetailsPreview() {
         upPress = { }
     )
 }
-
-
 
 @Preview(name = "Related")
 @Composable

@@ -13,10 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.example.androiddevchallenge.ui.views
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -41,7 +48,6 @@ import com.example.androiddevchallenge.ui.common.PuppyListItem
 import com.example.androiddevchallenge.ui.common.PuppyListRecentItem
 import com.example.androiddevchallenge.ui.theme.BlueTheme
 import dev.chrisbanes.accompanist.insets.navigationBarsPadding
-
 import dev.chrisbanes.accompanist.insets.statusBarsHeight
 
 @Composable
@@ -58,10 +64,10 @@ fun Puppys(
             PuppyAppBar()
         }
         item {
-            LastPuppy(0,selectCourse)
+            LastPuppy(0, selectCourse)
         }
 
-        item{
+        item {
             Text(
                 text = stringResource(id = R.string.allpets),
                 style = MaterialTheme.typography.h6,
@@ -100,9 +106,10 @@ fun PuppyUI(
 }
 
 @Composable
-private fun LastPuppy(puppyId: Long,
-                      selectPuppy: (Long) -> Unit)
- {
+private fun LastPuppy(
+    puppyId: Long,
+    selectPuppy: (Long) -> Unit
+) {
     val lastPuppy = remember(puppyId) { PuppyRepo.getRelated(puppyId) }
     BlueTheme {
         Surface(

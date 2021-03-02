@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.example.androiddevchallenge.model
 
 import androidx.compose.runtime.Immutable
@@ -22,7 +21,7 @@ import androidx.compose.runtime.Immutable
 data class Puppy(
     val id: Long,
     val name: String,
-    val breed:String = "Dog",
+    val breed: String = "Dog",
     val sex: String = "Female",
     val thumbUrl: String,
     val thumbContentDesc: String,
@@ -34,4 +33,3 @@ data class Puppy(
     val fee: Int = 70,
     val owner: String = "https://i.pravatar.cc/112?$id"
 )
-

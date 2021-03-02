@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.example.androiddevchallenge.ui.common
 
 import androidx.compose.foundation.clickable
@@ -31,26 +30,22 @@ import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Favorite
 import androidx.compose.material.icons.rounded.HealthAndSafety
-import androidx.compose.material.icons.rounded.OndemandVideo
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.model.Puppy
 import com.example.androiddevchallenge.repo.puppyList
 import com.example.androiddevchallenge.ui.theme.BlueTheme
 import com.example.androiddevchallenge.ui.theme.PuppyTheme
 import com.example.androiddevchallenge.utils.NetworkImage
-
 
 @Composable
 fun PuppyListItem(
@@ -99,7 +94,7 @@ fun PuppyListItem(
                         modifier = Modifier.size(iconSize)
                     )
                     Text(
-                        text =  puppy.characteristic,
+                        text = puppy.characteristic,
                         color = MaterialTheme.colors.primary,
                         style = MaterialTheme.typography.caption,
                         modifier = Modifier
@@ -123,7 +118,7 @@ fun PuppyListItem(
                         modifier = Modifier.size(iconSize)
                     )
                     Text(
-                        text =  puppy.vaccinated,
+                        text = puppy.vaccinated,
                         color = MaterialTheme.colors.primary,
                         style = MaterialTheme.typography.caption,
                         modifier = Modifier
@@ -131,7 +126,6 @@ fun PuppyListItem(
                             .weight(1f)
                             .wrapContentWidth(Alignment.Start)
                     )
-
                 }
             }
         }

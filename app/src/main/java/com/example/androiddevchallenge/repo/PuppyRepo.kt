@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge.repo
 
 import com.example.androiddevchallenge.model.Puppy
@@ -18,10 +33,10 @@ val puppyList = listOf(
         thumbUrl = "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50468078/1/",
         thumbContentDesc = "",
         description = "Julius is a young active cat desiring a house where he can run, play and get hugs.\n" +
-                "\n" +
-                "All our adult cats has one viral vaccine shot and kittens have 2-3 viral vaccine shot, anti-rabies w/ certificate, dewormed, spayed/neutered and microchipped.\n" +
-                "\n" +
-                "If you're interested in adopting Julius, please fill our form at: https://cutt.ly/rg3m3ER",
+            "\n" +
+            "All our adult cats has one viral vaccine shot and kittens have 2-3 viral vaccine shot, anti-rabies w/ certificate, dewormed, spayed/neutered and microchipped.\n" +
+            "\n" +
+            "If you're interested in adopting Julius, please fill our form at: https://cutt.ly/rg3m3ER",
 
     ),
     Puppy(
@@ -32,7 +47,7 @@ val puppyList = listOf(
         thumbContentDesc = "",
         description = "Having always been an animal lover I couldn't help but notice a void in my life- the house was so lonely. After living away from home for a while, I felt the desire to find a little companion who was down on their luck, needing a home and love. I decided on adopting a cat because I was in an apartment and I thought a dog would need more room than what I could offer. One Saturday I drove to my local Humane society shelter to look at cats who were eligible for adoption. My bleeding heart wanted to help all of those sweet kitties who were pawing at the kennel doors and meowing for attention. In the far side of the room I saw a handsome grey cat who didnt bother to get up. He seemed fat and content, Something about him just stood out to me. I guess you could say it was love at first sight. Not much later we were on our way home. We were fast friends. Goku was mischeivious, sometimes downright bad. But I loved him dearly. He met me at the front door He was always there to comfort and snuggle. He made us laugh and smile. Goku was an elderly cat who had health issues. He was my pal all the way to the end and im grateful to have had him. I recently lost him. Adopt a pet Save a life.",
 
-        ),
+    ),
     Puppy(
         id = 2,
         name = "Christina",
@@ -40,7 +55,7 @@ val puppyList = listOf(
         thumbUrl = "https://dl5zpyw5k3jeb.cloudfront.net/img/131aa6a4-88b5-4ed7-8049-2eba997be9a2.jpg",
         thumbContentDesc = "",
         description = "I found my winter on pet finder he is a French angora rabbit is so friendly and lovable I love file very much! So before I had got winter i has just lost my French angora rabbit his name was scarley who I loved very much and still do he was my best friend and we had a very strong bond between us...I had him since he was a month in a half old...he died at only three years old which devastated me I was left with a shattered heart! After the passing of my baby I started liking for another French angora rabbit that’s when I stumbled upon winter on per finder...I had got I contact with the people where he was staying at and explained my story about my previous baby..so I made plans to drive all the way to New Hampshire to adopt him! I’m happy I did because he makes me smile everyday..he is a very happy rabbit and loves to eat his hay and veggies I’m hoping I have a long life with him! He brings a lotta joy to my heart! I’m thankful to have him in my life! ❤️I found my winter on pet finder he is a French angora rabbit is so friendly and lovable I love file very much! So before I had got winter i has just lost my French angora rabbit his name was scarley who I loved very much and still do he was my best friend and we had a very strong bond between us...I had him since he was a month in a half old...he died at only three years old which devastated me I was left with a shattered heart! After the passing of my baby I started liking for another French angora rabbit that’s when I stumbled upon winter on per finder...I had got I contact with the people where he was staying at and explained my story about my previous baby..so I made plans to drive all the way to New Hampshire to adopt him! I’m happy I did because he makes me smile everyday..he is a very happy rabbit and loves to eat his hay and veggies I’m hoping I have a long life with him! He brings a lotta joy to my heart! I’m thankful to have him in my life! ❤"
-        ),
+    ),
     Puppy(
         id = 3,
         name = "Maggie",
@@ -64,10 +79,10 @@ val puppyList = listOf(
         thumbUrl = "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50703157/2/",
         thumbContentDesc = "",
         description = "Bluebell and her brother Mac are 3 month old lab/ Jack Russell terrier mixes. They were found as strays outside of Memphis TN and are doing great in a foster home. Bluebell is an adorable puppy. She is active and playful and we know she will make a great pet. She loves attention and is very sweet and affectionate. She will most likely be a medium sized adult. Bluebell has been spayed and is up to date on her shots. She is ready to travel to her forever home!\n" +
-                "\n" +
-                "Bluebell is currently in TN but will be transported north to New England for adoption. The adoption donation is \$500 which includes a health certificate and costs for her transport north."
+            "\n" +
+            "Bluebell is currently in TN but will be transported north to New England for adoption. The adoption donation is \$500 which includes a health certificate and costs for her transport north."
 
-        ),
+    ),
     Puppy(
         id = 6,
         name = "Freya",
