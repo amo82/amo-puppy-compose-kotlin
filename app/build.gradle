@@ -12,7 +12,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        vectorDrawables.useSupportLibrary true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -69,13 +69,27 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0'
     implementation "androidx.activity:activity-compose:1.3.0-alpha03"
     implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling:$compose_version"
+    implementation "androidx.compose.ui:ui-util:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
     implementation "androidx.compose.material:material-icons-extended:$compose_version"
     implementation "androidx.compose.ui:ui-tooling:$compose_version"
+    implementation "androidx.compose.animation:animation:$compose_version"
+    implementation "androidx.compose.foundation:foundation:$compose_version"
+    implementation "androidx.compose.foundation:foundation-layout:$compose_version"
+    implementation "androidx.compose.runtime:runtime:$compose_version"
+
+    implementation "androidx.navigation:navigation-compose:1.0.0-alpha08"
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.0'
+    implementation "dev.chrisbanes.accompanist:accompanist-coil:0.6.1"
+    implementation "dev.chrisbanes.accompanist:accompanist-insets:0.6.0"
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.0-alpha03"
+
+
 
     testImplementation 'junit:junit:4.13.2'
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+
 }
